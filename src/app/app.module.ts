@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-
 import { AppComponent } from './app.component';
 import { SimpleHttpComponent } from './simple-http/simple-http.component';
 import { YouTubeSearchComponent } from './you-tube-search/you-tube-search.component';
@@ -20,7 +19,7 @@ import { YouTubeSearchComponent } from './you-tube-search/you-tube-search.compon
     FormsModule,
     HttpClientModule // <-- right here
   ],
-  providers: [],
+  providers: [youTubeServiceInjectables],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
